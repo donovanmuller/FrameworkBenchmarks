@@ -26,7 +26,7 @@ import java.util.concurrent.TimeUnit;
 @With(Headers.class)
 public class Application extends Controller {
 
-    private static final int TEST_DATABASE_ROWS = 10000;
+    private static final int TEST_DATABASE_ROWS = 1;
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
 
     private static final int partitionCount = Play.application().configuration().getInt("db.default.partitionCount");
